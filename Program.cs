@@ -75,12 +75,25 @@ namespace Tic_Tac_Toe
     public class Game
     {
         private List<Player> Players = new List<Player>();
+        private int PlayerCount;
         private int Turn;
         private string[,] gamearray = new string[3, 3];
 
         public Game(int whogoesfirst = 1)
         {
             Turn = whogoesfirst;
+        }
+
+        public int PlayerCountProperty
+        {
+            get
+            {
+                return PlayerCount;
+            }
+            set
+            {
+                PlayerCount = value;
+            }
         }
 
         public int TurnProperty
