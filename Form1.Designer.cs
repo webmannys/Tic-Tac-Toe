@@ -63,6 +63,7 @@ namespace Tic_Tac_Toe
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.player2_txtbox = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.newplayer_panel.SuspendLayout();
             this.game_panel.SuspendLayout();
@@ -77,26 +78,27 @@ namespace Tic_Tac_Toe
             this.exitGameToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1137, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1137, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // newGameToolStripMenuItem
             // 
             this.newGameToolStripMenuItem.Name = "newGameToolStripMenuItem";
-            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(96, 24);
+            this.newGameToolStripMenuItem.Size = new System.Drawing.Size(96, 26);
             this.newGameToolStripMenuItem.Text = "New Game";
             this.newGameToolStripMenuItem.Click += new System.EventHandler(this.NewGameToolStripMenuItem_Click);
             // 
             // exitGameToolStripMenuItem
             // 
             this.exitGameToolStripMenuItem.Name = "exitGameToolStripMenuItem";
-            this.exitGameToolStripMenuItem.Size = new System.Drawing.Size(90, 24);
+            this.exitGameToolStripMenuItem.Size = new System.Drawing.Size(90, 26);
             this.exitGameToolStripMenuItem.Text = "Exit Game";
             this.exitGameToolStripMenuItem.Click += new System.EventHandler(this.ExitGameToolStripMenuItem_Click);
             // 
             // newplayer_panel
             // 
+            this.newplayer_panel.Controls.Add(this.player2_txtbox);
             this.newplayer_panel.Controls.Add(this.button1);
             this.newplayer_panel.Controls.Add(this.whogoesfirst_combobox);
             this.newplayer_panel.Controls.Add(this.label4);
@@ -352,9 +354,9 @@ namespace Tic_Tac_Toe
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(19, 73);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(289, 29);
+            this.label2.Size = new System.Drawing.Size(171, 29);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Player 2 Name: Computer";
+            this.label2.Text = "Player 2 Name";
             // 
             // label1
             // 
@@ -386,6 +388,13 @@ namespace Tic_Tac_Toe
             this.button3.Text = "2";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.Button3_Click);
+            // 
+            // player2_txtbox
+            // 
+            this.player2_txtbox.Location = new System.Drawing.Point(209, 73);
+            this.player2_txtbox.Name = "player2_txtbox";
+            this.player2_txtbox.Size = new System.Drawing.Size(307, 34);
+            this.player2_txtbox.TabIndex = 9;
             // 
             // Form1
             // 
@@ -443,6 +452,7 @@ namespace Tic_Tac_Toe
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox player2_txtbox;
     }
 }
 
