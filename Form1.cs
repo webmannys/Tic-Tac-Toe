@@ -398,5 +398,15 @@ namespace Tic_Tac_Toe
             newgame.AIMove();
             ReadFromArray();
         }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
