@@ -401,12 +401,16 @@ namespace Tic_Tac_Toe
 
         private void Button2_Click(object sender, EventArgs e)
         {
-
+            players_panel.Visible = false;
+            game_panel.Visible = true;
+            newgame.PlayerCountProperty = 1;
         }
 
         private void Button3_Click(object sender, EventArgs e)
         {
-
+            players_panel.Visible = false;
+            game_panel.Visible = true;
+            newgame.PlayerCountProperty = 2;
         }
     }
 }
