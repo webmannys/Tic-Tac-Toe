@@ -399,14 +399,16 @@ namespace Tic_Tac_Toe
             ReadFromArray();
         }
 
-        private void Button2_Click(object sender, EventArgs e)
+        private void player1_button_Click(object sender, EventArgs e)
         {
             players_panel.Visible = false;
             newplayer_panel.Visible = true;
+            player2_txtbox.Text = "Computer";
+            player2_txtbox.ReadOnly = true;
             newgame.PlayerCountProperty = 1;
         }
 
-        private void Button3_Click(object sender, EventArgs e)
+        private void player2_button_Click(object sender, EventArgs e)
         {
             players_panel.Visible = false;
             newplayer_panel.Visible = true;

@@ -61,8 +61,8 @@ namespace Tic_Tac_Toe
             this.player2_label = new System.Windows.Forms.Label();
             this.player1_label = new System.Windows.Forms.Label();
             this.players_panel = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.player2_button = new System.Windows.Forms.Button();
+            this.player1_button = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.newplayer_panel.SuspendLayout();
@@ -356,35 +356,35 @@ namespace Tic_Tac_Toe
             // 
             // players_panel
             // 
-            this.players_panel.Controls.Add(this.button3);
-            this.players_panel.Controls.Add(this.button2);
+            this.players_panel.Controls.Add(this.player2_button);
+            this.players_panel.Controls.Add(this.player1_button);
             this.players_panel.Controls.Add(this.label5);
             this.players_panel.Location = new System.Drawing.Point(12, 48);
             this.players_panel.Name = "players_panel";
             this.players_panel.Size = new System.Drawing.Size(542, 324);
             this.players_panel.TabIndex = 2;
             // 
-            // button3
+            // player2_button
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(203, 191);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(120, 47);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "2";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.Button3_Click);
+            this.player2_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.player2_button.Location = new System.Drawing.Point(203, 191);
+            this.player2_button.Name = "player2_button";
+            this.player2_button.Size = new System.Drawing.Size(120, 47);
+            this.player2_button.TabIndex = 2;
+            this.player2_button.Text = "2";
+            this.player2_button.UseVisualStyleBackColor = true;
+            this.player2_button.Click += new System.EventHandler(this.player2_button_Click);
             // 
-            // button2
+            // player1_button
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(203, 124);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(120, 45);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "1";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            this.player1_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.player1_button.Location = new System.Drawing.Point(203, 124);
+            this.player1_button.Name = "player1_button";
+            this.player1_button.Size = new System.Drawing.Size(120, 45);
+            this.player1_button.TabIndex = 1;
+            this.player1_button.Text = "1";
+            this.player1_button.UseVisualStyleBackColor = true;
+            this.player1_button.Click += new System.EventHandler(this.player1_button_Click);
             // 
             // label5
             // 
@@ -450,8 +450,8 @@ namespace Tic_Tac_Toe
         private System.Windows.Forms.Label current_player_label;
         private System.Windows.Forms.Panel players_panel;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button player2_button;
+        private System.Windows.Forms.Button player1_button;
         private System.Windows.Forms.TextBox player2_txtbox;
     }
 }
