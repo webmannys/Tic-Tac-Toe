@@ -123,7 +123,10 @@ namespace Tic_Tac_Toe
             if (Turn == 1)
             {
                 Turn = 2;
-                AIMove();
+                if (PlayerCount == 1)
+                {
+                    AIMove();
+                }
             }
             else
             {

@@ -68,7 +68,7 @@ namespace Tic_Tac_Toe
             else
             {
                 player1.NameProperty = player1_txtbox.Text;
-                player2.NameProperty = "Computer";
+                player2.NameProperty = player2_txtbox.Text;
 
                 if (whosx_combobox.SelectedItem.ToString().ToLower() == "player1")
                 {
@@ -104,8 +104,11 @@ namespace Tic_Tac_Toe
                 else
                 {
                     current_player_label.Text = "Current Player: Player 2 - " + player2.NameProperty;
-                    AIFirstMove();
-                    ChangeTurn();
+                    if (newgame.PlayerCountProperty == 1)
+                    {
+                        AIFirstMove();
+                        ChangeTurn();
+                    }
                 }
 
                 newplayer_panel.Visible = false;
