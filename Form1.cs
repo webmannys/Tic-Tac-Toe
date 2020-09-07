@@ -37,8 +37,9 @@ namespace Tic_Tac_Toe
             whosx_combobox.SelectedIndex = -1;
             whogoesfirst_combobox.SelectedIndex = -1;
 
+            players_panel.Visible = true;
+            newplayer_panel.Visible = false;
             game_panel.Visible = false;
-            newplayer_panel.Visible = true;
 
             gameon = 1;
         }
@@ -415,6 +416,8 @@ namespace Tic_Tac_Toe
         {
             players_panel.Visible = false;
             newplayer_panel.Visible = true;
+            player2_txtbox.Text = "";
+            player2_txtbox.ReadOnly = false;
             newgame.PlayerCountProperty = 2;
         }
     }

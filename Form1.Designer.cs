@@ -78,7 +78,7 @@ namespace Tic_Tac_Toe
             this.exitGameToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1137, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(601, 28);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -108,10 +108,10 @@ namespace Tic_Tac_Toe
             this.newplayer_panel.Controls.Add(this.label2);
             this.newplayer_panel.Controls.Add(this.label1);
             this.newplayer_panel.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.newplayer_panel.Location = new System.Drawing.Point(299, 381);
+            this.newplayer_panel.Location = new System.Drawing.Point(0, 0);
             this.newplayer_panel.Name = "newplayer_panel";
             this.newplayer_panel.Size = new System.Drawing.Size(551, 327);
-            this.newplayer_panel.TabIndex = 1;
+            this.newplayer_panel.TabIndex = 2;
             this.newplayer_panel.Visible = false;
             // 
             // player2_txtbox
@@ -198,6 +198,7 @@ namespace Tic_Tac_Toe
             // 
             // game_panel
             // 
+            this.game_panel.Controls.Add(this.newplayer_panel);
             this.game_panel.Controls.Add(this.current_player_label);
             this.game_panel.Controls.Add(this.ticbox_bottom_right);
             this.game_panel.Controls.Add(this.ticbox_bottom_middle);
@@ -210,10 +211,10 @@ namespace Tic_Tac_Toe
             this.game_panel.Controls.Add(this.ticbox_top_left);
             this.game_panel.Controls.Add(this.player2_label);
             this.game_panel.Controls.Add(this.player1_label);
-            this.game_panel.Location = new System.Drawing.Point(642, 48);
+            this.game_panel.Location = new System.Drawing.Point(12, 40);
             this.game_panel.Name = "game_panel";
             this.game_panel.Size = new System.Drawing.Size(545, 327);
-            this.game_panel.TabIndex = 2;
+            this.game_panel.TabIndex = 3;
             this.game_panel.Visible = false;
             // 
             // current_player_label
@@ -359,10 +360,10 @@ namespace Tic_Tac_Toe
             this.players_panel.Controls.Add(this.player2_button);
             this.players_panel.Controls.Add(this.player1_button);
             this.players_panel.Controls.Add(this.label5);
-            this.players_panel.Location = new System.Drawing.Point(12, 48);
+            this.players_panel.Location = new System.Drawing.Point(21, 40);
             this.players_panel.Name = "players_panel";
             this.players_panel.Size = new System.Drawing.Size(542, 324);
-            this.players_panel.TabIndex = 2;
+            this.players_panel.TabIndex = 1;
             // 
             // player2_button
             // 
@@ -400,10 +401,9 @@ namespace Tic_Tac_Toe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1137, 746);
-            this.Controls.Add(this.newplayer_panel);
-            this.Controls.Add(this.menuStrip1);
+            this.ClientSize = new System.Drawing.Size(601, 391);
             this.Controls.Add(this.players_panel);
+            this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.game_panel);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
